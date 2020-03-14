@@ -1,5 +1,5 @@
 import 'package:best_flutter_ui_templates/kurslar/home_design_course.dart';
-import 'package:best_flutter_ui_templates/fitness_app/fitness_app_home_screen.dart';
+import 'package:best_flutter_ui_templates/fitness/fitness_app_home_screen.dart';
 import 'package:best_flutter_ui_templates/otel/hotel_home_screen.dart';
 import 'package:flutter/widgets.dart';
 

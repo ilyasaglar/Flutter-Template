@@ -1,20 +1,21 @@
-import 'package:best_flutter_ui_templates/fitness_app/ui_view/area_list_view.dart';
-import 'package:best_flutter_ui_templates/fitness_app/ui_view/running_view.dart';
-import 'package:best_flutter_ui_templates/fitness_app/ui_view/title_view.dart';
-import 'package:best_flutter_ui_templates/fitness_app/ui_view/workout_view.dart';
+import 'package:best_flutter_ui_templates/fitness/ui_view/body_measurement.dart';
+import 'package:best_flutter_ui_templates/fitness/ui_view/glass_view.dart';
+import 'package:best_flutter_ui_templates/fitness/ui_view/mediterranesn_diet_view.dart';
+import 'package:best_flutter_ui_templates/fitness/ui_view/title_view.dart';
+import 'package:best_flutter_ui_templates/fitness/fintness_app_theme.dart';
+import 'package:best_flutter_ui_templates/fitness/my_diary/meals_list_view.dart';
+import 'package:best_flutter_ui_templates/fitness/my_diary/water_view.dart';
 import 'package:flutter/material.dart';
 
-import '../fintness_app_theme.dart';
-
-class TrainingScreen extends StatefulWidget {
-  const TrainingScreen({Key key, this.animationController}) : super(key: key);
+class MyDiaryScreen extends StatefulWidget {
+  const MyDiaryScreen({Key key, this.animationController}) : super(key: key);
 
   final AnimationController animationController;
   @override
-  _TrainingScreenState createState() => _TrainingScreenState();
+  _MyDiaryScreenState createState() => _MyDiaryScreenState();
 }
 
-class _TrainingScreenState extends State<TrainingScreen>
+class _MyDiaryScreenState extends State<MyDiaryScreen>
     with TickerProviderStateMixin {
   Animation<double> topBarAnimation;
 
@@ -56,11 +57,11 @@ class _TrainingScreenState extends State<TrainingScreen>
   }
 
   void addAllListData() {
-    const int count = 5;
+    const int count = 9;
 
     listViews.add(
       TitleView(
-        titleTxt: 'Your program',
+        titleTxt: 'Mediterranean diet',
         subTxt: 'Details',
         animation: Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
             parent: widget.animationController,
@@ -69,9 +70,19 @@ class _TrainingScreenState extends State<TrainingScreen>
         animationController: widget.animationController,
       ),
     );
-
     listViews.add(
-      WorkoutView(
+      MediterranesnDietView(
+        animation: Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 1, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
+    );
+    listViews.add(
+      TitleView(
+        titleTxt: 'Meals today',
+        subTxt: 'Customize',
         animation: Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
             parent: widget.animationController,
             curve:
@@ -79,20 +90,22 @@ class _TrainingScreenState extends State<TrainingScreen>
         animationController: widget.animationController,
       ),
     );
+
     listViews.add(
-      RunningView(
-        animation: Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
-            parent: widget.animationController,
-            curve:
-                Interval((1 / count) * 3, 1.0, curve: Curves.fastOutSlowIn))),
-        animationController: widget.animationController,
+      MealsListView(
+        mainScreenAnimation: Tween<double>(begin: 0.0, end: 1.0).animate(
+            CurvedAnimation(
+                parent: widget.animationController,
+                curve: Interval((1 / count) * 3, 1.0,
+                    curve: Curves.fastOutSlowIn))),
+        mainScreenAnimationController: widget.animationController,
       ),
     );
 
     listViews.add(
       TitleView(
-        titleTxt: 'Area of focus',
-        subTxt: 'more',
+        titleTxt: 'Body measurement',
+        subTxt: 'Today',
         animation: Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
             parent: widget.animationController,
             curve:
@@ -102,14 +115,44 @@ class _TrainingScreenState extends State<TrainingScreen>
     );
 
     listViews.add(
-      AreaListView(
+      BodyMeasurementView(
+        animation: Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 5, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
+    );
+    listViews.add(
+      TitleView(
+        titleTxt: 'Water',
+        subTxt: 'Aqua SmartBottle',
+        animation: Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 6, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
+    );
+
+    listViews.add(
+      WaterView(
         mainScreenAnimation: Tween<double>(begin: 0.0, end: 1.0).animate(
             CurvedAnimation(
                 parent: widget.animationController,
-                curve: Interval((1 / count) * 5, 1.0,
+                curve: Interval((1 / count) * 7, 1.0,
                     curve: Curves.fastOutSlowIn))),
         mainScreenAnimationController: widget.animationController,
       ),
+    );
+    listViews.add(
+      GlassView(
+          animation: Tween<double>(begin: 0.0, end: 1.0).animate(
+              CurvedAnimation(
+                  parent: widget.animationController,
+                  curve: Interval((1 / count) * 8, 1.0,
+                      curve: Curves.fastOutSlowIn))),
+          animationController: widget.animationController),
     );
   }
 
@@ -207,7 +250,7 @@ class _TrainingScreenState extends State<TrainingScreen>
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Text(
-                                  'Training',
+                                  'My Diary',
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
                                     fontFamily: FintnessAppTheme.fontName,
