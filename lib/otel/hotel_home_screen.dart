@@ -222,9 +222,6 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                     ),
                     onTap: () {
                       FocusScope.of(context).requestFocus(FocusNode());
-                      // setState(() {
-                      //   isDatePopupOpen = true;
-                      // });
                       showDemoDialog(context: context);
                     },
                     child: Padding(
@@ -235,7 +232,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Text(
-                            'Choose date',
+                            'Tarih Seçin',
                             style: TextStyle(
                                 fontWeight: FontWeight.w100,
                                 fontSize: 16,
@@ -291,7 +288,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Text(
-                            'Number of Rooms',
+                            'Oda Bilgileri',
                             style: TextStyle(
                                 fontWeight: FontWeight.w100,
                                 fontSize: 16,
@@ -301,7 +298,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                             height: 8,
                           ),
                           Text(
-                            '1 Room - 2 Adults',
+                            '1 Oda - 2 Yetişkin',
                             style: TextStyle(
                               fontWeight: FontWeight.w100,
                               fontSize: 16,
@@ -352,7 +349,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                     cursorColor: HotelAppTheme.buildLightTheme().primaryColor,
                     decoration: InputDecoration(
                       border: InputBorder.none,
-                      hintText: 'London...',
+                      hintText: 'Ankara...',
                     ),
                   ),
                 ),
@@ -426,7 +423,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      '530 hotels found',
+                      '530 otel bulundu',
                       style: TextStyle(
                         fontWeight: FontWeight.w100,
                         fontSize: 16,
@@ -458,7 +455,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                       child: Row(
                         children: <Widget>[
                           Text(
-                            'Filtter',
+                            'Filtrele',
                             style: TextStyle(
                               fontWeight: FontWeight.w100,
                               fontSize: 16,
@@ -552,10 +549,10 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
             Expanded(
               child: Center(
                 child: Text(
-                  'Explore',
+                  'Otel Keşfedin',
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
-                    fontSize: 22,
+                    fontSize: 20,
                   ),
                 ),
               ),
