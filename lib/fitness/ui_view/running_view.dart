@@ -70,13 +70,13 @@ class RunningView extends StatelessWidget {
                                           top: 16,
                                         ),
                                         child: Text(
-                                          "You're doing great!",
+                                          "Harika gidiyorsun",
                                           textAlign: TextAlign.left,
                                           style: TextStyle(
                                             fontFamily:
                                                 FintnessAppTheme.fontName,
                                             fontWeight: FontWeight.w500,
-                                            fontSize: 14,
+                                            fontSize: 15,
                                             letterSpacing: 0.0,
                                             color:
                                                 FintnessAppTheme.nearlyDarkBlue,
@@ -93,12 +93,12 @@ class RunningView extends StatelessWidget {
                                       right: 16,
                                     ),
                                     child: Text(
-                                      "Keep it up\nand stick to your plan!",
+                                      "Devam et ve planına bağlı kal!",
                                       textAlign: TextAlign.left,
                                       style: TextStyle(
                                         fontFamily: FintnessAppTheme.fontName,
                                         fontWeight: FontWeight.w500,
-                                        fontSize: 10,
+                                        fontSize: 13,
                                         letterSpacing: 0.0,
                                         color: FintnessAppTheme.grey
                                             .withOpacity(0.5),
