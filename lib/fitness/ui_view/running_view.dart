@@ -38,7 +38,7 @@ class RunningView extends StatelessWidget {
                                 topRight: Radius.circular(8.0)),
                             boxShadow: <BoxShadow>[
                               BoxShadow(
-                                  color: FintnessAppTheme.grey.withOpacity(0.4),
+                                  color: FintnessAppTheme.grey.withOpacity(0.5),
                                   offset: Offset(1.1, 1.1),
                                   blurRadius: 10.0),
                             ],

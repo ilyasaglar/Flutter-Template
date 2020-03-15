@@ -26,7 +26,7 @@ class WorkoutView extends StatelessWidget {
                 decoration: BoxDecoration(
                   gradient: LinearGradient(colors: [
                     FintnessAppTheme.nearlyDarkBlue,
-                    HexColor("#6F56E8")
+                    HexColor("#6FF6E8")
                   ], begin: Alignment.topLeft, end: Alignment.bottomRight),
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(8.0),
@@ -60,7 +60,7 @@ class WorkoutView extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(top: 8.0),
                         child: Text(
-                          'Legs Toning and\nGlutes Workout at Home',
+                          'Evde Bacak Tonlama ve \nGlute Egzersizleri',
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             fontFamily: FintnessAppTheme.fontName,
@@ -91,7 +91,7 @@ class WorkoutView extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.only(left: 4.0),
                               child: Text(
-                                '68 min',
+                                '68 dakika',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontFamily: FintnessAppTheme.fontName,
