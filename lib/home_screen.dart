@@ -132,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                 child: Text(
                   'Flutter UI Tasarım Örneği',
                   style: TextStyle(
-                    fontSize: 19,
+                    fontSize: 18,
                     color: AppTheme.darkText,
                     fontWeight: FontWeight.w700,
                   ),

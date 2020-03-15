@@ -255,7 +255,7 @@ class _MyDiaryScreenState extends State<MyDiaryScreen>
                                   style: TextStyle(
                                     fontFamily: FintnessAppTheme.fontName,
                                     fontWeight: FontWeight.w700,
-                                    fontSize: 20.5 + 6 - 6 * topBarOpacity,
+                                    fontSize: 18 + 6 - 6 * topBarOpacity,
                                     letterSpacing: 1.2,
                                     color: FintnessAppTheme.darkerText,
                                   ),

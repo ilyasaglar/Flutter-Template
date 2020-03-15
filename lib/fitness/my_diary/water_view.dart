@@ -89,7 +89,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                 Padding(
                                   padding: const EdgeInsets.only(left: 4, top: 2, bottom: 14),
                                   child: Text(
-                                    'Günlük Hedef 3.5L',
+                                    'Günlük Hedef 3.5 Lt',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontFamily: FintnessAppTheme.fontName,
@@ -159,7 +159,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                         ),
                                         Flexible(
                                           child: Text(
-                                            'Şişenizi doldurun.',
+                                            'Şişenizi doldurun!',
                                             textAlign: TextAlign.start,
                                             style: TextStyle(
                                               fontFamily: FintnessAppTheme.fontName,

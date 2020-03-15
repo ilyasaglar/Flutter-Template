@@ -194,7 +194,7 @@ class MealsView extends StatelessWidget {
                                         padding: const EdgeInsets.only(
                                             left: 4, bottom: 3),
                                         child: Text(
-                                          'KaloriS',
+                                          'Kalori',
                                           style: TextStyle(
                                             fontFamily:
                                                 FintnessAppTheme.fontName,
