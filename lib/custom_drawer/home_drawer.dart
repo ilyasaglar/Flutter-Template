@@ -45,7 +45,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
       ),
       DrawerList(
         index: DrawerIndex.Invite,
-        labelName: 'Arkadaşlarını Davet Et',
+        labelName: 'Arkadaş Davet Et',
         icon: Icon(Icons.group),
       ),
       DrawerList(
