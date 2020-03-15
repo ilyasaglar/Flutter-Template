@@ -49,7 +49,7 @@ class BodyMeasurementView extends StatelessWidget {
                             padding: const EdgeInsets.only(
                                 left: 4, bottom: 8, top: 16),
                             child: Text(
-                              'Weight',
+                              'Kilo',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontFamily: FintnessAppTheme.fontName,
@@ -71,7 +71,7 @@ class BodyMeasurementView extends StatelessWidget {
                                     padding: const EdgeInsets.only(
                                         left: 4, bottom: 3),
                                     child: Text(
-                                      '206.8',
+                                      '68',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         fontFamily: FintnessAppTheme.fontName,
@@ -85,7 +85,7 @@ class BodyMeasurementView extends StatelessWidget {
                                     padding: const EdgeInsets.only(
                                         left: 8, bottom: 8),
                                     child: Text(
-                                      'Ibs',
+                                      'KG',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         fontFamily: FintnessAppTheme.fontName,
@@ -115,7 +115,7 @@ class BodyMeasurementView extends StatelessWidget {
                                         padding:
                                             const EdgeInsets.only(left: 4.0),
                                         child: Text(
-                                          'Today 8:26 AM',
+                                          'Bugün 9:26 ',
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                             fontFamily:
@@ -134,7 +134,7 @@ class BodyMeasurementView extends StatelessWidget {
                                     padding: const EdgeInsets.only(
                                         top: 4, bottom: 14),
                                     child: Text(
-                                      'InBody SmartScale',
+                                      '',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         fontFamily: FintnessAppTheme.fontName,
@@ -174,7 +174,7 @@ class BodyMeasurementView extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Text(
-                                  '185 cm',
+                                  '175 cm',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontFamily: FintnessAppTheme.fontName,
@@ -187,7 +187,7 @@ class BodyMeasurementView extends StatelessWidget {
                                 Padding(
                                   padding: const EdgeInsets.only(top: 6),
                                   child: Text(
-                                    'Height',
+                                    'Boy',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontFamily: FintnessAppTheme.fontName,
@@ -211,7 +211,7 @@ class BodyMeasurementView extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
                                     Text(
-                                      '27.3 BMI',
+                                      '22,2 kg/m2',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         fontFamily: FintnessAppTheme.fontName,
@@ -224,7 +224,7 @@ class BodyMeasurementView extends StatelessWidget {
                                     Padding(
                                       padding: const EdgeInsets.only(top: 6),
                                       child: Text(
-                                        'Overweight',
+                                        'İdeal Kilo',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                           fontFamily: FintnessAppTheme.fontName,
@@ -250,7 +250,7 @@ class BodyMeasurementView extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: <Widget>[
                                     Text(
-                                      '20%',
+                                      '15%',
                                       style: TextStyle(
                                         fontFamily: FintnessAppTheme.fontName,
                                         fontWeight: FontWeight.w500,
@@ -262,7 +262,7 @@ class BodyMeasurementView extends StatelessWidget {
                                     Padding(
                                       padding: const EdgeInsets.only(top: 6),
                                       child: Text(
-                                        'Body fat',
+                                        'Yağ Oranı',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                           fontFamily: FintnessAppTheme.fontName,

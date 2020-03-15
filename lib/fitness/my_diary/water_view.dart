@@ -89,7 +89,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                 Padding(
                                   padding: const EdgeInsets.only(left: 4, top: 2, bottom: 14),
                                   child: Text(
-                                    'of daily goal 3.5L',
+                                    'Günlük Hedef 3.5L',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontFamily: FintnessAppTheme.fontName,
@@ -133,7 +133,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                       Padding(
                                         padding: const EdgeInsets.only(left: 4.0),
                                         child: Text(
-                                          'Last drink 8:26 AM',
+                                          'Sonraki Saat: 18:26 ',
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                             fontFamily: FintnessAppTheme.fontName,
@@ -159,14 +159,14 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                         ),
                                         Flexible(
                                           child: Text(
-                                            'Your bottle is empty, refill it!.',
+                                            'Şişenizi doldurun.',
                                             textAlign: TextAlign.start,
                                             style: TextStyle(
                                               fontFamily: FintnessAppTheme.fontName,
                                               fontWeight: FontWeight.w500,
                                               fontSize: 12,
                                               letterSpacing: 0.0,
-                                              color: HexColor('#F65283'),
+                                              color: HexColor('#F95283'),
                                             ),
                                           ),
                                         ),

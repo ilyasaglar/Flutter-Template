@@ -60,8 +60,8 @@ class _TrainingScreenState extends State<TrainingScreen>
 
     listViews.add(
       TitleView(
-        titleTxt: 'Your program',
-        subTxt: 'Details',
+        titleTxt: 'Bugünkü Programın  ',
+        subTxt: 'Detaylar',
         animation: Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
             parent: widget.animationController,
             curve:
@@ -91,8 +91,8 @@ class _TrainingScreenState extends State<TrainingScreen>
 
     listViews.add(
       TitleView(
-        titleTxt: 'Area of focus',
-        subTxt: 'more',
+        titleTxt: 'Odaklanma Alanı',
+        subTxt: 'Devamı',
         animation: Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
             parent: widget.animationController,
             curve:
@@ -207,12 +207,12 @@ class _TrainingScreenState extends State<TrainingScreen>
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Text(
-                                  'Training',
+                                  'Egzersizler',
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
                                     fontFamily: FintnessAppTheme.fontName,
                                     fontWeight: FontWeight.w700,
-                                    fontSize: 22 + 6 - 6 * topBarOpacity,
+                                    fontSize: 18 + 6 - 6 * topBarOpacity,
                                     letterSpacing: 1.2,
                                     color: FintnessAppTheme.darkerText,
                                   ),
