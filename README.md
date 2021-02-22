@@ -1,6 +1,5 @@
-Flutter Template Example 
+Sample Turkish version of Flutter Template
 
-A new Flutter project.
 
 ## Getting Started
 
